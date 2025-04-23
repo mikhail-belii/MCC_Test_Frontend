@@ -1,0 +1,11 @@
+.tree {
+    padding: 20px;
+}
+  
+.tree-node-children {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 5px;
+    list-style-type: none;
+}
