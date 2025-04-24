@@ -2,7 +2,7 @@ import { TreePropsType } from "../../types"
 import TreeNode from "../TreeNode/TreeNode"
 import "./Tree.css"
 
-const Tree = ({tree, rootName}: TreePropsType) => {
+const Tree = ({tree, rootName, onRemove, onReset}: TreePropsType) => {
     const root = tree[rootName]
     if (!root) {
         return <div className="tree">Корень дерева не определен</div>
@@ -13,7 +13,9 @@ const Tree = ({tree, rootName}: TreePropsType) => {
                 tree={tree}
                 id={root.id}
                 name={root.name}
-                children={root.children}/>
+                children={root.children}
+                onRemove={onRemove}
+                onReset={onReset}/>
         </div>
     )
 }

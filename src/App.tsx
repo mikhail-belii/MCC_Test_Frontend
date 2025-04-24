@@ -76,18 +76,20 @@ function App() {
   }
 
   const resetTree = () => {
-    setTree(baseTree)
+    setTree(structuredClone(baseTree))
   }
 
   return (
     <div className="app">
-      <Tree tree={tree} rootName='root'/>
+      <Tree 
+        tree={tree} 
+        rootName='root' 
+        onRemove={removeNode}
+        onReset={resetTree}/>
       <InteractTreePanel
         tree={tree}
         onAddingNode={addNode}
-        onRemovingNode={removeNode}
-        onEditingNode={editNode}
-        onResetingTree={resetTree}/>
+        onEditingNode={editNode}/>
 
     </div>
   )

@@ -10,12 +10,16 @@ export type TreeType = {
 
 export type TreePropsType = {
     tree: TreeType,
-    rootName: string
+    rootName: string,
+    onRemove: (id: string) => void,
+    onReset: () => void
 }
 
 export type TreeNodePropsType = {
     tree: TreeType,
     id: string,
     name: string,
-    children: string[]
+    children: string[],
+    onRemove: (id: string) => void,
+    onReset: () => void
 }

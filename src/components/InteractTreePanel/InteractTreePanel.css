@@ -26,17 +26,7 @@
             background-color: #004ea2;
         }
     }
-
-    .remove-node-button {
-        background-color: #ff5f5f;
-        &:hover {
-            background-color: #ff3535;
-        }
-        &:active {
-            background-color: #ff1d1d;
-        }
-    }
-
+    
     .edit-node-button {
         background-color: #dfa800;
         &:hover {

@@ -12,3 +12,14 @@
         border-left: 0.5vh solid #00a2ff;
     }
 }
+
+.node {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.remove-node-icon, .reset-tree-icon {
+    width: 2vw;
+    cursor: pointer;
+}
