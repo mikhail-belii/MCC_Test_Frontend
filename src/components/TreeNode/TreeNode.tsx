@@ -1,7 +1,7 @@
 import { TreeNodePropsType } from "../../types"
 import "./TreeNode.css"
 
-const TreeNode = ({tree, id, name, children, onClick}: TreeNodePropsType) => {
+const TreeNode = ({tree, id, name, children}: TreeNodePropsType) => {
     return (
         <div className="tree-node" id={`node-${id}`}>
             <span>{name}</span>

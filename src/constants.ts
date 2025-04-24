@@ -6,4 +6,4 @@ export const baseTree: TreeType = {
         name: "Root node",
         children: []
     }
-  }
+}

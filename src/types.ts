@@ -17,6 +17,5 @@ export type TreeNodePropsType = {
     tree: TreeType,
     id: string,
     name: string,
-    children: string[],
-    onClick?: () => void,
+    children: string[]
 }

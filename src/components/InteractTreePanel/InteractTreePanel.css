@@ -1,0 +1,75 @@
+.interact-tree-panel {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px 10px;
+}
+
+.interact-node-form {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    gap: 1vh;
+
+    button {
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .add-node-button {
+        background-color: #007bff;
+        &:hover {
+            background-color: #0056b3;
+        }
+        &:active {
+            background-color: #004ea2;
+        }
+    }
+
+    .remove-node-button {
+        background-color: #ff5f5f;
+        &:hover {
+            background-color: #ff3535;
+        }
+        &:active {
+            background-color: #ff1d1d;
+        }
+    }
+
+    .edit-node-button {
+        background-color: #dfa800;
+        &:hover {
+            background-color: #c69500;
+        }
+        &:active {
+            background-color: #b48700;
+        }
+    }
+
+    .reset-tree-button {
+        background-color: #a9a9a9;
+        &:hover {
+            background-color: #9e9e9e;
+        }
+        &:active {
+            background-color: #878787;
+        }
+    }
+}
+  
+.interact-node-form input,
+  .interact-node-form select {
+    padding: 1vh;
+    font-size: 1vw;
+    font-family: Rob-Med;
+    border: 0.15vw solid #cfcfcf;
+    border-radius: 6px;
+}
+
+.interact-node-form button {
+    padding: 1vh;
+    font-size: 1vw;
+    font-family: Rob-Med;
+    border-radius: 6px;
+}
