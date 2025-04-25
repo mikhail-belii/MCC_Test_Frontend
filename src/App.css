@@ -4,5 +4,8 @@
 }
 
 .app {
-
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: 10vh;
 }

@@ -23,3 +23,9 @@ export type TreeNodePropsType = {
     onRemove: (id: string) => void,
     onReset: () => void
 }
+
+export type InteractTreePanelPropsType = {
+    tree: TreeType,
+    onAddingNode: (newNodeName: string, idIncrement: number, parentId: string) => void,
+    onEditingNode: (nodeId: string, newName: string) => void
+}

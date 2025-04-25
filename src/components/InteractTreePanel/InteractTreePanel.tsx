@@ -1,12 +1,6 @@
 import { useState } from "react"
-import { TreeType } from "../../types"
+import { InteractTreePanelPropsType } from "../../types"
 import "./InteractTreePanel.css"
-
-export type InteractTreePanelPropsType = {
-    tree: TreeType,
-    onAddingNode: (newNodeName: string, idIncrement: number, parentId: string) => void,
-    onEditingNode: (nodeId: string, newName: string) => void
-}
 
 const InteractTreePanel = ({tree, onAddingNode, onEditingNode}: InteractTreePanelPropsType) => {
     const [newNodeName, setNewNodeName] = useState<string>("")
@@ -51,6 +45,7 @@ const InteractTreePanel = ({tree, onAddingNode, onEditingNode}: InteractTreePane
     return (
         <div className="interact-tree-panel">
             <div className="interact-node-form">
+                <p>Добавление вершины</p>
                 <input
                 type="text"
                 value={newNodeName}
@@ -71,6 +66,7 @@ const InteractTreePanel = ({tree, onAddingNode, onEditingNode}: InteractTreePane
                 <button type="button" className="add-node-button" onClick={handleAddNode}>Добавить вершину</button>
             </div>
             <div className="interact-node-form">
+            <p>Изменение названия вершины</p>
                 <input
                     type="text"
                     value={NodeNewName}
